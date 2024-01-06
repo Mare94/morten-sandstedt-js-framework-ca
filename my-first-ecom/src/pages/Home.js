@@ -43,6 +43,7 @@ function Home() {
                 <div>
                     <h2>{post.title}</h2>
                     <p>{post.body}</p>
+                    <p>{post.price}</p>
                 </div>
             ))}
         </div>
