@@ -20,7 +20,7 @@ const Nav = () => {
     <Outlet />
         </>
     )
-}
+};
 
 const Header = () => {
     return (
@@ -31,11 +31,11 @@ const Header = () => {
         </header>
         </>
     )
-}
+};
 
 const Footer = () => {
     return <footer>Website footer</footer>
-}
+};
 
 const Layout = () => {
     return (
@@ -45,6 +45,6 @@ const Layout = () => {
         <Footer />
         </>
     )
-}
+};
 
 export default Layout;
