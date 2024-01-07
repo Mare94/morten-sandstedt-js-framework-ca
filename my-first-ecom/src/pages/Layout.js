@@ -1,4 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
+import ContactPage from "./ContactPage";
 
 const Nav = () => {
     return (
@@ -12,7 +13,7 @@ const Nav = () => {
           <Link to="/productpage">Products</Link>
         </li>
         <li>
-          <Link to="/contact">Contact Us</Link>
+          <Link to="/contactpage">Contact Us</Link>
         </li>
       </ul>
     </nav>
