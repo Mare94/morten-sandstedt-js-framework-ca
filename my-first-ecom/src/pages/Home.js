@@ -10,6 +10,8 @@ function Home() {
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
 
+    let { id } = useParams();
+
     useEffect(()=> {
 
         async function getData() {
@@ -40,11 +42,12 @@ function Home() {
         <div>
             {posts.map((post)=> (
                 <div>
-                    
+                    <div>{post.id}</div>
                     <h2>{post.title}</h2>
                     <p>{post.description}</p>
                     <p>{post.price}</p>
                     <p>{post.rating}</p>
+                    
                 </div>
             ))}
         </div>
