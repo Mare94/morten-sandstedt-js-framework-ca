@@ -47,7 +47,8 @@ function Post() {
             <div>{data.id}</div>
             <div>ID: {data.id}</div>
             <div>Title: {data.title}</div>
-            <div><p>{data.body}</p></div>
+            <div>{data.imageUrl}</div>
+            <div><p>{data.description}</p></div>
             <div>Price: {data.price}</div>
         </div>
     );

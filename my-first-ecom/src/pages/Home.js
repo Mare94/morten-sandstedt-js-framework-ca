@@ -4,7 +4,6 @@ const url = 'https://api.noroff.dev/api/v1/online-shop';
 
 
 
-
 function Home() {
     const [posts, setPosts] = useState([]);
 
@@ -41,9 +40,11 @@ function Home() {
         <div>
             {posts.map((post)=> (
                 <div>
+                    
                     <h2>{post.title}</h2>
-                    <p>{post.body}</p>
+                    <p>{post.description}</p>
                     <p>{post.price}</p>
+                    <p>{post.rating}</p>
                 </div>
             ))}
         </div>
