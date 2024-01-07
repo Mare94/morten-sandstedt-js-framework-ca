@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { ReactDOM } from "react-dom/client";
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers';
+import * as yup from 'yup';
+
+
 
 function ContactForm() {
     const [inputs, setInputs] = useState({});
@@ -21,8 +25,13 @@ function ContactForm() {
         <form onSubmit={handleSubmit}>
             <label>Your Name:
                 <input
+                {...register('firstName', {
+                    required: true,
+                    minLength: 3,
+                    maxLength: 30,
+                })}
                 type="text"
-                name ="username"
+                name ="firstName"
                 value={inputs.username || ""}
                 onChange={handleChange}
                  />

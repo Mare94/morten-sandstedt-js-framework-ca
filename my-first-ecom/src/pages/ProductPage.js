@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Routes, Route, Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-const url = 'https://api.noroff.dev/api/v1/online-shop/'
+
 
 function Home() {
     return <div>Home</div>
 };
+
+Home();
 
 function ProductPage() {
     const [data, setData] = useState(null);
@@ -13,9 +15,13 @@ function ProductPage() {
     const [isError, setIsError] = useState(false);
     let { id } = useParams();
 
+    
+
     useEffect(()=>{
         async function getData(url) {
             try {
+
+                
                 setIsLoading(true);
                 setIsError(false);
 
@@ -56,4 +62,4 @@ function ProductPage() {
 
 }
 
-export default ProductPage
+export default ProductPage;

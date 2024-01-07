@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import ContactPage from "./ContactPage";
+import ContactPage from "./ContactPage.js";
 
 const Nav = () => {
     return (
