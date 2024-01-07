@@ -7,7 +7,7 @@ function Home() {
     return <div>Home</div>
 };
 
-function Post() {
+function ProductPage() {
     const [data, setData] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
@@ -55,3 +55,5 @@ function Post() {
 
 
 }
+
+export default ProductPage

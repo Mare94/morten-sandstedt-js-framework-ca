@@ -10,7 +10,7 @@ function Home() {
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
 
-    let { id } = useParams();
+
 
     useEffect(()=> {
 
